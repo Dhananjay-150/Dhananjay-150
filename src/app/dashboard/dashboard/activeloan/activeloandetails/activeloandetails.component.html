@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+   <head>
+   </head>
+   <body>
+      <div class="account-pages " >
+         <div class="container">
+            
+            <div class="row"  style="border-bottom: 1px solid #ddcbcb; background-color: #63447fd1;">
+                
+              <div class="column1">
+                <a routerLink="/activeloan">
+                    <button type="button" class="btn header-item" style="font-size: 20px; color: #fff;">
+                        <i class="fa-solid fa-angles-left"></i> 
+                    </button>
+                </a>
+              </div>
+
+              <div class="column2 dealerdetailh4">
+                <h6 class="">Active Loan Details</h6>
+              </div>
+
+            </div>
+
+            <div class="row justify-content-center pt-3 insidepagebox">
+                <div class="col-lg-12">
+                                        <div class="insidepageboxcont">
+                                            <span>Loan Ref No</span>
+                                            <h2>{{ loanDetails?.[0]?.LOAN_REF_NO }}</h2>
+                                        </div>
+                                    </div>
+                <div class="col-lg-12">
+                    <div class="two-columns-grid">
+                        <div class="activeloanleftname"><p class=""><b>Anchor Name:</b></p></div>
+                        <div class="activeloanrightname"><p class="">{{ loanDetails?.[0]?.ANCHOR_NAME }}</p></div>
+
+                        <div class="activeloanleftname"><p class=""><b>Anchor Cust ID:</b></p></div>
+                        <div class="activeloanrightname"><p class="">{{ loanDetails?.[0]?.ANCHOR_CUST_ID }}</p></div>
+                    
+
+                        <div class="activeloanleftname"><p class=""><b>Customer Name:</b></p></div>
+                        <div class="activeloanrightname"><p class="">{{ loanDetails?.[0]?.DRAWDOWNFOR }}</p></div>
+
+                        <div class="activeloanleftname"><p class=""><b>Customer ID:</b></p></div>
+                        <div class="activeloanrightname"><p class="">{{ loanDetails?.[0]?.DEALER_CUST_ID }}</p></div>
+
+                        <div class="activeloanleftname"><p class=""><b>Disbursement Date:</b></p></div>
+                        <div class="activeloanrightname"><p class="">{{ loanDetails?.[0]?.BOOK_DATE }}</p></div>
+
+                        <div class="activeloanleftname"><p class=""><b>Tranch Maturity Date:</b></p></div>
+                        <div class="activeloanrightname"><p class="">{{ loanDetails?.[0]?.MATURITY_DATE }}</p></div>
+
+                        <div class="activeloanleftname"><p class=""><b>Principle OS:</b></p></div>
+                        <div class="activeloanrightname"><p class="">{{ loanDetails?.[0]?.PRINCIPLE_OS }}</p></div>
+
+                        <div class="activeloanleftname"><p class=""><b>Interest OS:</b></p></div>
+                        <div class="activeloanrightname"><p class="">{{ loanDetails?.[0]?.INTEREST_OS }}</p></div>
+
+                        <div class="activeloanleftname"><p class=""><b>Penal OS:</b></p></div>
+                        <div class="activeloanrightname"><p class="">{{ loanDetails?.[0]?.PENAL_INTEREST_OS }}</p></div>
+
+                        <div class="activeloanleftname"><p class=""><b>Total OS:</b></p></div>
+                        <div class="activeloanrightname"><p class="">{{ loanDetails?.[0]?.TOTAL_OVERDUE_AMOUNT }}</p></div>
+
+                        <div class="activeloanleftname"><p class=""><b>Tranch DPD:</b></p></div>
+                        <div class="activeloanrightname"><p class="">{{ loanDetails?.[0]?.DPDDAYS }}</p></div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <footer class="footer dashboardbottomfix" style="padding: 0px;">
+                <div class="container-fluid" style="padding: 0px;">
+                    <div class="row" style="padding: 0px;">
+                        <div class="col-lg-12 hasboardbottommenubg" style="padding: 0px;">
+                           
+                            <div class="hasboardbottommenu">
+                                <a routerLink="/dashboard"><i class="fa-solid fa-house "></i><br>
+                                    <p>Home</p>
+                                </a>
+                            </div>
+                            <div class="hasboardbottommenu">
+                                <a routerLink="/faq"><i class="fa-solid fa-question"></i><br>
+                                    <p>FAQ</p>
+                                </a>
+                            </div>
+                            <div class="hasboardbottommenu">
+                                <a routerLink="/profile"><i class="fa-regular fa-user"></i><br>
+                                    <p>Profile</p>
+                                </a>
+                            </div>
+                            <div class="hasboardbottommenu">
+                                <a routerLink="/contactsupport"><i class="fa-solid fa-headphones"></i><br>
+                                    <p>Support</p>
+                                </a>
+                            </div>
+                        </div>
+                         
+                    </div>
+                </div>
+            </footer>
+         </div>
+      </div>
+   </body>
+</html>
